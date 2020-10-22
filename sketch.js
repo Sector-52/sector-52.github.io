@@ -17,7 +17,7 @@ function setup() {
   textSize(20);
   fill(255);
   
-  cnv.position(windowWidth/2-(width/2), windowHeight/2-(height/2), 'fixed');
+  cnv.position(windowWidth/2-(width/2), 200), 'fixed');
   background(0);
   
   button = createButton('INCIDENT REQUEST');
