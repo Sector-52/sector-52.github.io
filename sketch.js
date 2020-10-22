@@ -14,14 +14,14 @@ let cnv;
 function setup() {
   cnv = createCanvas(350, 450);
   
-  textSize(30);
+  textSize(20);
   fill(255);
   
   cnv.position(windowWidth/2-(width/2), windowHeight/2-(height/2), 'fixed');
   background(0);
   
-  button = createButton('generate');
-  button.position(cnv.x+30, cnv.y+10);
+  button = createButton('INCIDENT REQUEST');
+  button.position(cnv.x+10, cnv.y+10);
   button.mousePressed(generate);
   button.addClass('bigB');
   
@@ -42,8 +42,16 @@ function generate()
   report = random(reports);  
   place = random(places); 
   crime = random(crimes); 
+  fill(150);
+  text("ITEM:",10,100,300,50);
+  text("LOCATION:",10,170,300,50);
+  text("REPORTED BY:",10,250,300,50);
   
-  text(report+" reported the follwing crime: "+crime+" at the following location: "+place, 30, 100, 300,400);
+  fill(255);
+  text(crime,70,100,300,100);
+  text(place,125,170,200,120);
+  text(report,170,250,180,150);
+  //text(report+" reported the follwing crime: "+crime+" at the following location: "+place, 30, 100, 300,400);
   
 
 }
