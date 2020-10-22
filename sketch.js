@@ -17,11 +17,11 @@ function setup() {
   textSize(20);
   fill(255);
   
-  cnv.position(windowWidth/2-(width/2), 200, 'fixed'));
+  cnv.position(windowWidth/2-(width/2), 200, 'fixed');
   background(0);
   
   button = createButton('INCIDENT REQUEST');
-  button.position(cnv.x+10, cnv.y+10);
+  button.position(cnv.x+5, cnv.y+10);
   button.mousePressed(generate);
   button.addClass('bigB');
   
@@ -58,5 +58,5 @@ function generate()
 
 function windowResized() {
   cnv.position(windowWidth/2-(width/2), 200, 'fixed');
-  button.position(cnv.x+30, cnv.y+10);
+  button.position(cnv.x+5, cnv.y+10);
 }
