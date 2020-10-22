@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color:black;
+  background-color:#000;
   font size:2em;
 }
 cnv {
@@ -31,5 +31,5 @@ button.bigB{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 20px;
 }
