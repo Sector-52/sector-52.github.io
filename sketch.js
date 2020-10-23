@@ -28,7 +28,7 @@ function setup() {
   
 
   button2 = createButton('TERMINATE CALL');
-  button2.position(cnv.x+5, cnv.y+300);
+  button2.position(cnv.x+5, cnv.y+320);
   button2.mousePressed(goBack);
   button2.addClass('bigB');
   
@@ -71,5 +71,5 @@ function generate()
 function windowResized() {
   cnv.position(windowWidth/2-(width/2), 200);
   button.position(cnv.x+5, cnv.y+10);
-  button2.position(cnv.x+5, cnv.y+300);
+  button2.position(cnv.x+5, cnv.y+320);
 }
