@@ -39,7 +39,7 @@ function draw() {
 
 function generate()
 {
-    window.location.href = "a href="http://www.google.com";
+    window.location.href = "http://www.google.com";
   background(0);
   report = random(reports);  
   place = random(places); 
