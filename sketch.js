@@ -38,7 +38,6 @@ function draw() {
 
 function generate()
 {
-  window.open("http://www.google.com", _self);
   background(0);
   report = random(reports);  
   place = random(places); 
