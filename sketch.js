@@ -39,7 +39,7 @@ function draw() {
 
 function generate()
 {
-  createA("https://bbc.co.uk", "go", "_self]");
+    window.location.href = '<a href="http://www.google.com" target="_self">http://www.google.com</a>';
   background(0);
   report = random(reports);  
   place = random(places); 
