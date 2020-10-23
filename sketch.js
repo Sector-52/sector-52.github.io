@@ -36,8 +36,10 @@ function draw() {
 
 }
 
+
 function generate()
 {
+  createA("https://bbc.co.uk", "go", "_self]");
   background(0);
   report = random(reports);  
   place = random(places); 
