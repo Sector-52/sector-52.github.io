@@ -7,6 +7,7 @@ let place = "";
 let crime = "";
 
 let button;
+let button2;
 
 let cnv;
 
@@ -17,7 +18,7 @@ function setup() {
   textSize(20);
   fill(255);
   
-  cnv.position(windowWidth/2-(width/2), 170, 'fixed');
+  cnv.position(windowWidth/2-(width/2), 200);
   background(0);
   
   button = createButton('INCIDENT REQUEST');
@@ -26,7 +27,11 @@ function setup() {
   button.addClass('bigB');
   
 
-  //textAlign(CENTER, CENTER);
+  button2 = createButton('BACK');
+  button2.position(cnv.x+5, cnv.y+300);
+  button2.mousePressed(goBack);
+  button2.addClass('bigB');
+  
   
 }
 
@@ -36,10 +41,13 @@ function draw() {
 
 }
 
+function goBack()
+{
+  window.location = "https://sector-52.com";
+}
 
 function generate()
 {
-    window.location.href = "http://www.google.com";
   background(0);
   report = random(reports);  
   place = random(places); 
@@ -54,11 +62,14 @@ function generate()
   text(place,125,170,200,120);
   text(report,170,250,180,150);
   //text(report+" reported the follwing crime: "+crime+" at the following location: "+place, 30, 100, 300,400);
-  
+    
 
+
+  
 }
 
 function windowResized() {
-  cnv.position(windowWidth/2-(width/2), 170, 'fixed');
+  cnv.position(windowWidth/2-(width/2), 200);
   button.position(cnv.x+5, cnv.y+10);
+  button2.position(cnv.x+5, cnv.y+300);
 }
