@@ -27,7 +27,7 @@ function setup() {
   button.addClass('bigB');
   
 
-  button2 = createButton('BACK');
+  button2 = createButton('TERMINATE CALL');
   button2.position(cnv.x+5, cnv.y+300);
   button2.mousePressed(goBack);
   button2.addClass('bigB');
